@@ -27,14 +27,15 @@ public class E18T3 {
             
             intento = entrada.nextInt();
             
+            veces = veces + 1;
+            
             if (intento == password){
                 
                 System.out.println("¡Enhorabuena!");
             }
             
+
             else{
-                
-                veces = veces + 1;
                 
                 if(veces == 3) {
                 
