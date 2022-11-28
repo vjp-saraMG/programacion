@@ -12,13 +12,14 @@ import java.util.Scanner;
  */
 public class E18T3 {
     
+    final static int PASSWORD = 1234;
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-        int password = 1234, intento, veces = 0;
+        int intento, veces = 0;
         
         Scanner entrada = new Scanner (System.in);
         
@@ -29,7 +30,7 @@ public class E18T3 {
             
             veces = veces + 1;
             
-            if (intento == password){
+            if (intento == PASSWORD){
                 
                 System.out.println("¡Enhorabuena!");
             }
@@ -43,7 +44,7 @@ public class E18T3 {
                 }
             }
             
-        }while(veces < 3 && intento != password);
+        }while(veces < 3 && intento != PASSWORD);
         
        }
     }
