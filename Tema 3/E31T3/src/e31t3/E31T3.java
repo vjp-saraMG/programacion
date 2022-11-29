@@ -16,35 +16,28 @@ public class E31T3 {
      */
     public static void main(String[] args) {
         
-        double aleatorio1, aleatorio2, aleatorio3, contador = 0;
-        
-        
+        double aleatorio, contador = 0, contImp = 0;
+           
         do {
             
-           aleatorio1 = Math.floor((Math.random()*100+1));
+           aleatorio = Math.floor((Math.random()*100+1));
+      
+           int aleatorioEntero = (int) aleatorio;
            
-           aleatorio2 = Math.floor((Math.random()*100+1));
            
-           aleatorio3 = Math.floor((Math.random()*100+1));
-
-
-           int aleatorioEntero1 = (int) aleatorio1;
-           
-           int aleatorioEntero2 = (int) aleatorio2;
-           
-           int aleatorioEntero3 = (int) aleatorio3;
-           
-           if (aleatorio1 % 2 == 1 && aleatorio2 % 2 == 1 && aleatorio3 % 2 == 1){
+           if (aleatorio % 2 == 1){
                
-               System.out.println("Los tres numeros impares generados son: " + aleatorio1 + aleatorio2 + aleatorio3);
+               System.out.println("Los tres numeros impares generados son: " + aleatorio);
                
                System.out.println("La cantidad de valores aleatorios que se han generado hasta obtener los tres numeros impares es de " + contador + " valores");
                
            }
-            
+           
            contador = contador + 1;
-            
-        }while(aleatorio1 % 2 != 1 && aleatorio2 != 1 && aleatorio3 != 1);
+           
+           contImp = contImp + 1;
+
+        }while(contImp > 3);
         
         
     }
