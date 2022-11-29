@@ -5,18 +5,23 @@
  */
 package e31t3;
 
+
+
 /**
  *
  * @author sara
  */
 public class E31T3 {
+    
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-        double aleatorio, contador = 0, contImp = 0;
+        double aleatorio;
+                
+        int contImp = 0, contador = 0, numero;
            
         do {
             
@@ -24,21 +29,21 @@ public class E31T3 {
       
            int aleatorioEntero = (int) aleatorio;
            
+           numero = (int) aleatorio;
+
+           contador = contador + 1;
            
            if (aleatorio % 2 == 1){
                
-               System.out.println("Los tres numeros impares generados son: " + aleatorio);
+               System.out.println("Los numeros impares generados son: " + numero);
                
-               System.out.println("La cantidad de valores aleatorios que se han generado hasta obtener los tres numeros impares es de " + contador + " valores");
+               contImp = contImp + 1;
                
            }
-           
-           contador = contador + 1;
-           
-           contImp = contImp + 1;
 
-        }while(contImp > 3);
+        }while(contImp < 3);
         
+        System.out.println("Intentos que se han necesitado para obtener los tres numeros impares: " + contador + " intentos");
         
     }
     
