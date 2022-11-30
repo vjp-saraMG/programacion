@@ -21,21 +21,19 @@ public class E31T3 {
         
         double aleatorio;
                 
-        int contImp = 0, contador = 0, numero;
+        int aleatorioEntero, contImp = 0, contador = 0;
            
         do {
             
            aleatorio = Math.floor((Math.random()*100+1));
       
-           int aleatorioEntero = (int) aleatorio;
-           
-           numero = (int) aleatorio;
+           aleatorioEntero = (int) aleatorio;
 
            contador = contador + 1;
            
-           if (aleatorio % 2 == 1){
+           if (aleatorioEntero % 2 == 1){
                
-               System.out.println("Los numeros impares generados son: " + numero);
+               System.out.println("Los numeros impares generados son: " + aleatorioEntero);
                
                contImp = contImp + 1;
                
