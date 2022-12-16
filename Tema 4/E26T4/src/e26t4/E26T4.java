@@ -22,14 +22,13 @@ public class E26T4 {
     public static boolean esPrimo (int numero){
         int contador = 2;
         boolean primo = true;
-        while(contador != numero && contador/numero == 0){
-            if(contador%numero == 1){
-                primo = true;
-            }
-            else{
+        while(primo && contador != numero){
+            if (numero%contador == 0){
                 primo = false;
             }
-            contador ++;
+            else{
+                contador = contador + 1;
+            }
         }
         return primo;
     }
@@ -40,6 +39,15 @@ public class E26T4 {
     public static void main(String[] args) {
         int numero;
         numero = pedirNumero();
+        
+        if (esPrimo(numero)){
+            System.out.println("El " + numero + " es primo");
+        }
+        else{
+            System.out.println("El " + numero + " NO es primo");
+        }
+        
+        
     }
     
 }
