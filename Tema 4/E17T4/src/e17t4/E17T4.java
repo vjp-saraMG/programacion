@@ -22,22 +22,22 @@ public class E17T4 {
     public static int generarLetraAleatoria(){
         double aleatorio = Math.random()*(122-97) + 97;
         int letraAleatoriaEntera = (int) aleatorio;
+        char letraUsuario = (char) letraAleatoriaEntera;
         return letraAleatoriaEntera;
     }
     
     public static int comprobarResultado(char letraUsuario, char letraAleatoriaEntera){
-        letraAleatoriaEntera = (char) generarLetraAleatoria();
         //letraUsuario = (char) letraAleatoriaEntera;
         //System.out.println(letraAleatoriaEntera);
         if (letraUsuario == letraAleatoriaEntera){
             System.out.println("¡Enhorabuena! Has acertado.");
         }
         else{
-            if (letraUsuario < letraAleatoriaEntera){
-                System.out.println("La letra que tienes que adivinar está antes que la que intentas adivinar.");
+            if (letraUsuario > letraAleatoriaEntera){
+                System.out.println("La letra que tienes que adivinar está antes que la que has introducido.");
             }
             else{
-                System.out.println("La letra que tienes que adivinar está después que la que tienes que adivinar.");
+                System.out.println("La letra que tienes que adivinar está después que la que has introducido.");
             }
         }
         return letraAleatoriaEntera;
@@ -58,8 +58,7 @@ public class E17T4 {
         }while(letraUsuario != letraAleatoria);
         
         System.out.println("El numero de intentos que has necesitado es de: " + contador);
-        
-        
+
     }
     
 }
