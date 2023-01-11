@@ -52,20 +52,20 @@ public class E03T5 {
         System.out.println("Coche 1: ");
         System.out.println("Marca: " + coche1.obtenerMarca());
         System.out.println("Modelo: " + coche1.obtenerModelo());
-        System.out.println("Material de la rueda: " + coche1.obtenerRueda());//REVISAR
-        System.out.println("Tamaño de la rueda: " + coche1.obtenerRueda());//REVISAR
+        System.out.println("Material de la rueda: " + coche1.obtenerRueda().obtenerMaterial());
+        System.out.println("Tamaño de la rueda: " + coche1.obtenerRueda().obtenerPulgadas());
         
         System.out.println("Coche 2: ");
         System.out.println("Marca: " + coche2.obtenerMarca());
         System.out.println("Modelo: " + coche2.obtenerMarca());
-        System.out.println("Material de la rueda: " + coche2.obtenerRueda());//REVISAR
-        System.out.println("Tamaño de la rueda: " + coche2.obtenerRueda());//REVISAR
+        System.out.println("Material de la rueda: " + coche2.obtenerRueda().obtenerMaterial());
+        System.out.println("Tamaño de la rueda: " + coche2.obtenerRueda().obtenerPulgadas());
         
         System.out.println("Coche 3: ");
         System.out.println("Marca: " + coche3.obtenerMarca());
         System.out.println("Modelo: " + coche3.obtenerModelo());
-        System.out.println("Material de la rueda: " + coche3.obtenerRueda());//REVISAR
-        System.out.println("Tamaño de la rueda: " + coche3.obtenerRueda());//REVISAR
+        System.out.println("Material de la rueda: " + coche3.obtenerRueda().obtenerMaterial());
+        System.out.println("Tamaño de la rueda: " + coche3.obtenerRueda().obtenerPulgadas());
     }
     
 }
