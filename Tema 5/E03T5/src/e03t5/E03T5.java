@@ -45,7 +45,7 @@ public class E03T5 {
         coche3.establecerMarca("Ford");
         coche3.establecerModelo("Fiesta");
         
-        coche1.establecerRueda(rueda1);
+        coche1.establecerRueda(rueda1); //Aquí básicamente está indicando que la rueda1 la quiere meter en el coche1. Pero la rueda1 es solo un conjunto de atributos y métodos.
         coche2.establecerRueda(rueda1);
         coche3.establecerRueda(rueda2);
         

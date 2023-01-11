@@ -10,7 +10,7 @@ package e02t5;
  * @author sara
  */
 public class Curso {
-    private static int numeroDeCursos;
+    private static int numeroDeCursos = 0;
     private String nombre;
     private int numeroHoras;
     
@@ -28,7 +28,7 @@ public class Curso {
         return numeroHoras;
     }
     
-    public static void sumarCursos(){
+    public static void sumarCursos(){ //Es static porque el atributo con el que trabaja es estático también, si no lo fuera, habría que crearse un objeto para poder usarlos.
         numeroDeCursos ++;
     }
     
